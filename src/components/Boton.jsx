@@ -10,7 +10,7 @@ const Boton = ({ children, handleClick }) => {
     <div
       onClick={() => handleClick(children)}
       className={`boton-contenedor ${
-        esOperador(children) && "operador"
+        esOperador(children) ? "operador" : ""
       } `.trimEnd()}
     >
       {children}
